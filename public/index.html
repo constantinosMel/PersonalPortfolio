@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konstantinos Meletiou - iOS Developer</title>
+    <link rel="icon" type="image/png" href="assets/images/apps/favIcon.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                <img src="assets/images/apps/favIcon.png" alt="KM" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#work">Published Apps</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content fade-up">
+                <div class="profile-image">
+                    <img src="assets/images/profile.jpg" alt="Konstantinos Meletiou">
+                </div>
+                <h1>Konstantinos Meletiou</h1>
+                <h2>Tech Lead | Senior iOS Developer at Kahoot!</h2>
+                <div class="bio">
+                    <p>👋 Hi, I'm Konstantinos — an iOS Developer and Tech Lead based in Oslo, passionate about building seamless mobile experiences with Swift. With a background in Computer Engineering from the National Technical University of Athens and years of hands-on experience, I've led teams, shipped high-performance apps, and crafted tools that empower people to learn, focus, and grow. Whether it's designing productivity tools or experimenting with haptics and AI, I love creating things that feel intuitive, purposeful, and just a little bit magical.</p>
+                </div>
+                <p class="subtitle">Oslo, Norway</p>
+                <div class="cta-buttons">
+                    <a href="#work" class="cta-primary">View Projects</a>
+                    <a href="#contact" class="cta-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work" data-section="Published Apps">
+            <div class="featured-app">
+                <article class="card featured">
+                    <div class="featured-content">
+                        <div class="featured-media">
+                            <div class="image-container">
+                                <a href="https://hapticsync.gr/" target="_blank">
+                                    <img src="assets/images/apps/haptic-sync.jpeg" alt="HapticSync App">
+                                </a>
+                            </div>
+                            <div class="image-container video-container">
+                                <a href="https://hapticsync.gr/" target="_blank">
+                                    <video autoplay loop muted playsinline poster="assets/images/apps/haptic-sync.png">
+                                        <source src="https://pub-a0ceb26499f94175a83d426bef28c780.r2.dev/haptic-sync_demo.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="featured-info">
+                            <h3>HapticSync</h3>
+                            <p>A vibration studio app that enables developers, designers, and creators to easily design, test, and export custom haptic patterns for their apps and experiences.</p>
+                            <div class="tags">
+                                <span class="tag">iOS</span>
+                                <span class="tag">CoreHaptics</span>
+                                <span class="tag">Developer Tools</span>
+                            </div>
+                            <div class="app-links">
+                                <a href="https://hapticsync.gr/" target="_blank" class="website-link">Visit Website</a>
+                                <a href="https://apps.apple.com/us/app/hapticsync-vibration-studio/id6743813963" target="_blank">
+                                    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="app-store-badge">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="grid grid-2">
+                <article class="card">
+                    <div class="image-container">
+                        <a href="https://apps.apple.com/us/app/focus-lock-block-apps/id6504156620" target="_blank">
+                            <img src="assets/images/apps/focus-lock.png" alt="Focus Lock App">
+                        </a>
+                    </div>
+                    <h3>Focus Lock</h3>
+                    <p>An app that helps you stay focused by blocking distracting apps and tracking your productivity.</p>
+                    <div class="tags">
+                        <span class="tag">iOS</span>
+                        <span class="tag">SwiftUI</span>
+                        <span class="tag">Productivity</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://apps.apple.com/us/app/focus-lock-block-apps/id6504156620" target="_blank">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="app-store-badge">
+                        </a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                        <a href="https://apps.apple.com/us/app/timerfit-workout-planner/id6449913158" target="_blank">
+                            <img src="assets/images/apps/timerfit.png" alt="TimerFit App">
+                        </a>
+                    </div>
+                    <h3>TimerFit</h3>
+                    <p>A workout planner app with customizable interval timers and workout templates.</p>
+                    <div class="tags">
+                        <span class="tag">iOS</span>
+                        <span class="tag">HealthKit</span>
+                        <span class="tag">Health & Fitness</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://apps.apple.com/us/app/timerfit-workout-planner/id6449913158" target="_blank">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="app-store-badge">
+                        </a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                        <a href="https://apps.apple.com/us/app/game-night-friends-fun/id6450798413" target="_blank">
+                            <img src="assets/images/apps/game-night.png" alt="Game Night App">
+                        </a>
+                    </div>
+                    <h3>Game Night</h3>
+                    <p>A fun party game app for friends and family gatherings.</p>
+                    <div class="tags">
+                        <span class="tag">iOS</span>
+                        <span class="tag">SwiftUI</span>
+                        <span class="tag">Games</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://apps.apple.com/us/app/game-night-friends-fun/id6450798413" target="_blank">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="app-store-badge">
+                        </a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                        <a href="https://apps.apple.com/us/app/wrist-chat-instant-answers/id6499107275" target="_blank">
+                            <img src="assets/images/apps/wrist-chat.png" alt="Wrist Chat App">
+                        </a>
+                    </div>
+                    <h3>Wrist Chat - Instant Answers</h3>
+                    <p>Tap into the future of convenience with Instant Wrist Chat, the fastest way to get answers directly on your Apple Watch. Simply tap to ask any question and receive instant responses.</p>
+                    <div class="tags">
+                        <span class="tag">watchOS</span>
+                        <span class="tag">iOS</span>
+                        <span class="tag">Productivity</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://apps.apple.com/us/app/wrist-chat-instant-answers/id6499107275" target="_blank">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="app-store-badge">
+                        </a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                        <a href="https://apps.apple.com/us/app/unwordit/id6443437387" target="_blank">
+                            <img src="assets/images/apps/unwordit.png" alt="UnWordit App">
+                        </a>
+                    </div>
+                    <h3>UnWordit</h3>
+                    <p>A word puzzle game designed for Apple Watch. Play unlimited games trying to guess the word in this engaging watchOS experience.</p>
+                    <div class="tags">
+                        <span class="tag">watchOS</span>
+                        <span class="tag">SwiftUI</span>
+                        <span class="tag">Games</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://apps.apple.com/us/app/unwordit/id6443437387" target="_blank">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="app-store-badge">
+                        </a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                        <a href="https://apps.apple.com/us/app/garage-179/id1517033639" target="_blank">
+                            <img src="assets/images/apps/garage179.png" alt="Garage 179 App">
+                        </a>
+                    </div>
+                    <h3>Garage 179</h3>
+                    <p>A fitness app that allows users to register, view available classes, make reservations, track their subscription period, and receive notifications for upcoming workouts.</p>
+                    <div class="tags">
+                        <span class="tag">iOS</span>
+                        <span class="tag">UIKit</span>
+                        <span class="tag">Health & Fitness</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://apps.apple.com/us/app/garage-179/id1517033639" target="_blank">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="app-store-badge">
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="experience" data-section="Experience">
+            <div class="timeline">
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <h3>Kahoot!</h3>
+                        <h4>Tech Lead</h4>
+                        <div class="date">July 2024 - Present (10 months)</div>
+                        <p>Leading the Kahoot Kids & Young Students team to make learning fun and engaging for kids worldwide</p>
+                        <div class="location">Oslo, Norway</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <h3>Kahoot!</h3>
+                        <h4>Senior iOS Developer</h4>
+                        <div class="date">July 2023 - Present (1 year 10 months)</div>
+                        <div class="location">Oslo, Norway</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <h3>Kahoot!</h3>
+                        <h4>iOS Developer</h4>
+                        <div class="date">March 2021 - Present (4 years 2 months)</div>
+                        <p>As an iOS Developer at Kahoot!, I am responsible for the maintenance and continuous development of new features for the Kahoot! iOS mobile application, which has a significant impact on millions of users worldwide.</p>
+                        <div class="location">Oslo, Norway</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <h3>Programize LLC</h3>
+                        <h4>iOS Developer</h4>
+                        <div class="date">October 2018 - September 2020 (2 years)</div>
+                        <p>During my time at Programize LLC, I had the opportunity to develop a range of native iOS applications for various clients:</p>
+                        <ul>
+                            <li>Feel Therapeutics - a mental health app that communicates with a Bluetooth wearable to collect and analyze biometrics.</li>
+                            <li>Nomad - a trip planner app.</li>
+                            <li>1REBEL - an app for buying and booking sessions at a high-intensity studio fitness.</li>
+                        </ul>
+                        <div class="location">Athens, Attiki, Greece</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <h3>Cognity</h3>
+                        <h4>iOS Developer</h4>
+                        <div class="date">January 2020 - July 2020 (7 months)</div>
+                        <p>As an iOS developer at Cognity, I worked on a fast-paced app for a major Greek telecommunications provider, leading the development team and ensuring the project's successful delivery.</p>
+                        <div class="location">Athens, Attiki, Greece</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <h3>Intuition Robotics</h3>
+                        <h4>iOS Developer</h4>
+                        <div class="date">September 2019 - January 2020 (5 months)</div>
+                        <p>As part of the team developing the iOS companion app for ElliQ, I designed and implemented a custom Logging system that utilized Google Stackdriver. This system allowed for easy and efficient logging of application events and provided real-time access to logs and diagnostic information.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education" data-section="Education">
+            <div class="timeline">
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <h3>Essential Developer Academy</h3>
+                        <h4>iOS Lead Essentials</h4>
+                        <div class="date">2024</div>
+                        <p>Completed the iOS Professional Program, focusing on:</p>
+                        <ul>
+                            <li>Test-Driven Development (TDD)</li>
+                            <li>Clean Architecture</li>
+                            <li>SOLID Principles</li>
+                            <li>Design Patterns</li>
+                            <li>Advanced iOS Development</li>
+                        </ul>
+                        <a href="https://academy.essentialdeveloper.com/achievements/0eaee51e-6127-4c09-bb60-8ea2fa58ebc5" target="_blank" class="certificate-link">
+                            View Certificate
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <h3>National Technical University of Athens</h3>
+                        <h4>School of Electrical and Computer Engineering</h4>
+                        <div class="date">2013 - 2018</div>
+                        <p>During my studies at NTUA, I specialized in the Computer Systems, Software, and Computer Networks, focusing on both theoretical foundations and practical applications of computer engineering.</p>
+                        <p>5-year joint degree - M.Sc. & B.Sc, 300 ECTS</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-up">
+                    <div class="timeline-content">
+                        <h3>General Lyceum of Vagia, Viotia</h3>
+                        <h4>High School Diploma</h4>
+                        <div class="date">2010 - 2013</div>
+                        <p>Top graduated</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section data-section="Projects">
+            <div class="timeline">
+                <div class="timeline-item visible">
+                    <div class="timeline-content">
+                        <h3>iNetworkLogger</h3>
+                        <p>A lightweight, easy-to-use network logging class for iOS and macOS applications. Monitor and debug your network requests with ease.</p>
+                        <ul>
+                            <li>🔍 Intercept and log all network requests and responses</li>
+                            <li>📝 Multiple logging levels (minimal, verbose, file-only)</li>
+                            <li>💾 Save logs to file for later analysis</li>
+                            <li>⚙️ SwiftUI settings interface for easy configuration</li>
+                            <li>🎯 Filter specific endpoints</li>
+                            <li>📱 Real-time console logging</li>
+                        </ul>
+                        <div class="certificate-link" style="margin-top: 1.5rem;">
+                            <a href="https://github.com/constantinosMel/iNetworkLogger" target="_blank" class="certificate-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact" data-section="Contact">
+            <div class="contact-simple">
+                <h3>Get in Touch</h3>
+                <p>Feel free to reach out to me at:</p>
+                <a href="mailto:konstantinos.meletiou@gmail.com" class="email-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    konstantinos.meletiou@gmail.com
+                </a>
+                <div class="social-links">
+                    <a href="https://github.com/constantinosMel" class="social-link" target="_blank" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/konstantinosmeletiou/" class="social-link" target="_blank" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/k_meletiou" class="social-link" target="_blank" aria-label="X (Twitter)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Konstantinos Meletiou. All rights reserved.</p>
+    </footer>
+
+    <script src="js/background.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
